@@ -18,8 +18,8 @@ function checkTree(cords) {
   var t = [0, 0];
   while (i < array.length - 1) {
     var tempString = array[t[1]];
-    if (tempString) tempString = tempString.repeat(Math.floor(t[0] / 10) + 1);
-    if (tempString && tempString[t[0]] == "#") tempTree = tempTree + 1;
+    if (tempString) tempString = tempString.repeat(t[0] / 10);
+    if (tempString && tempString[t[0]] == "#") tempTree++;
     t[0] += cords[0];
     t[1] += cords[1];
     i++;
