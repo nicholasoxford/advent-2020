@@ -7,9 +7,9 @@ var testObj = [
   [7, 1, 0],
   [1, 2, 0],
 ];
-testObj.forEach((tuple) => {
-  tuple[2] = checkTree(tuple);
-});
+testObj.forEach(tuple => 
+  tuple[2] = checkTree(tuple)
+);
 console.log(testObj[0][2] * testObj[1][2] * testObj[2][2] * testObj[3][2] * testObj[4][2]);
 
 function checkTree(cords) {
