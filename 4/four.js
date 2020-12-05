@@ -82,7 +82,6 @@ function validateItems(items) {
       }
       if (parms == "in") {
         if (int >= 59 && int <= 76) return true;
-        else return false;
       } else return false;
     } else if (items[0] == "hcl") {
       if (items[1].substring(0, 1) == "#") {
